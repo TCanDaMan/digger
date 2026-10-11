@@ -1,36 +1,28 @@
 <title>Digger Money Trail</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;900&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <style>
-/* Layout: a drilled core sample. Critics sit at the surface; ownership strata run downward; every score is a mark on one shared 0–100 scale. */
+/* Layout: a well log. The page is a bore hole drilled from the Greenland ice down through rock to crude; each section sits at a depth, and every critic is a sample pulled from the ownership strata. Single dark world by design: crude, shale, glacier ice, flare. */
 :root{
-  --ground:#E4E7E2; --paper:#F3F4F0; --ink:#172024; --muted:#56656A; --line:#C3CAC4; --faint:#D6DBD5;
-  --accent:#0D6764; --low:#A9452A; --mid:#8B8F7E; --high:#0D6764;
-  --tech:#4555C9; --oil:#9A6410;
-  --s1:#E9EBE4; --s2:#E1E3DA; --s3:#D8DACF; --s4:#CFD0C3; --s5:#C5C4B6;
-  --f-display:"Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  color-scheme:dark;
+  --ground:#0C0D0C; --paper:#151715; --ink:#ECEBE4; --muted:#9A9A8E; --line:#2E312C; --faint:#1E211D;
+  --ice:#A9D8E0; --flare:#F07A2B; --crude:#050505; --sheen:linear-gradient(100deg,#A9D8E0 0%,#9C8CE0 35%,#E6A85A 65%,#A9D8E0 100%);
+  --accent:#A9D8E0; --low:#F07A2B; --mid:#7F7E73; --high:#A9D8E0;
+  --tech:#9C8CE0; --oil:#E6A85A;
+  --s1:#1A1C19; --s2:#1F201C; --s3:#24231E; --s4:#292720; --s5:#2E2A21;
+  --f-display:"Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
   --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --r:6px;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r:4px;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --ground:#0F1416; --paper:#161D20; --ink:#E3E8E4; --muted:#93A1A3; --line:#2D383B; --faint:#222B2E;
-  --accent:#43B7B0; --low:#E07A55; --mid:#8E9488; --high:#43B7B0;
-  --tech:#8F9BF2; --oil:#E2A94B;
-  --s1:#141B1D; --s2:#182022; --s3:#1C2426; --s4:#20282A; --s5:#252C2D; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --ground:#0F1416; --paper:#161D20; --ink:#E3E8E4; --muted:#93A1A3; --line:#2D383B; --faint:#222B2E;
-  --accent:#43B7B0; --low:#E07A55; --mid:#8E9488; --high:#43B7B0;
-  --tech:#8F9BF2; --oil:#E2A94B;
-  --s1:#141B1D; --s2:#182022; --s3:#1C2426; --s4:#20282A; --s5:#252C2D; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body);-webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:clamp(28px,5vw,56px) 64px;display:grid;gap:clamp(44px,7vw,80px)}
 h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.05}
-h1{font-weight:800;font-size:clamp(44px,8.5vw,104px);letter-spacing:-.02em}
-h2{font-weight:800;font-size:clamp(28px,4vw,42px);letter-spacing:-.01em}
-h3{font-weight:500;font-size:20px}
+h1{font-weight:900;font-size:clamp(64px,13vw,168px);letter-spacing:.005em;line-height:.86;text-transform:uppercase}
+h2{font-weight:900;font-size:clamp(32px,4.6vw,52px);letter-spacing:.01em;text-transform:uppercase;line-height:.95}
+h3{font-weight:600;font-size:22px;letter-spacing:.02em;text-transform:uppercase}
 p{margin:0;max-width:66ch}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -44,9 +36,9 @@ section{display:grid;gap:22px;min-width:0}
 .hero{display:grid;gap:22px}
 .hero h1 .bore{display:inline-block;position:relative}
 .hero .dek{font-size:clamp(17px,2vw,20px);max-width:60ch}
-.verdict{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr);gap:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.verdict{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr);gap:0;border-top:3px solid var(--flare);border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--paper) 80%,transparent);backdrop-filter:blur(2px)}
 .verdict .call{padding:20px 24px 20px 0;display:grid;gap:8px;align-content:start;border-right:1px solid var(--line)}
-.verdict .call strong{font:800 clamp(24px,3vw,32px)/1.1 var(--f-display)}
+.verdict .call strong{font:900 clamp(30px,3.6vw,42px)/1 var(--f-display);text-transform:uppercase}
 .nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
 .num{padding:20px 18px;display:grid;gap:6px;align-content:start;border-right:1px solid var(--line)}
 .num:last-child{border-right:0}
@@ -58,7 +50,7 @@ section{display:grid;gap:22px;min-width:0}
 .controls{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--paper)}
 .seg button{font:600 13px var(--f-body);color:var(--muted);background:none;border:0;border-radius:999px;padding:7px 14px;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.seg button[aria-pressed="true"]{background:var(--ice);color:var(--crude)}
 .seg-label{font:600 11px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:8px}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);align-items:center}
 .legend i{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:6px}
@@ -87,7 +79,7 @@ section{display:grid;gap:22px;min-width:0}
 .panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:grid;gap:16px;min-width:0;position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}
 @media (max-width:980px){.panel{position:static}}
 .panel .who{display:grid;gap:4px}
-.panel .who h3{font-weight:800;font-size:24px}
+.panel .who h3{font-weight:900;font-size:30px;text-transform:none}
 .scorebar{display:grid;gap:6px}
 .scorebar svg{width:100%;height:46px;display:block;overflow:visible}
 .chain{display:grid;gap:0}
@@ -113,7 +105,7 @@ blockquote{margin:0;padding-left:12px;border-left:2px solid var(--line);font-sty
 .tests{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:14px}
 .test{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;display:grid;gap:12px;align-content:start;min-width:0}
 .test .q{font:600 15px/1.35 var(--f-body)}
-.test .a{font:800 22px/1.15 var(--f-display)}
+.test .a{font:900 28px/1 var(--f-display);text-transform:uppercase}
 .test p{font-size:14px;color:var(--muted)}
 .test svg{width:100%;height:auto;display:block}
 .test svg text{fill:var(--muted);font:10.5px var(--f-mono)}
@@ -131,45 +123,63 @@ blockquote{margin:0;padding-left:12px;border-left:2px solid var(--line);font-sty
 .timeline li{display:grid;grid-template-columns:62px minmax(0,1fr);gap:14px;padding:10px 0;border-top:1px solid var(--line)}
 .timeline li:first-child{border-top:0}
 .timeline .d{font:600 12px var(--f-mono);color:var(--muted);padding-top:2px}
-.timeline li.key{background:linear-gradient(90deg,color-mix(in srgb,var(--oil) 14%,transparent),transparent);margin-inline:-20px;padding-inline:20px}
+.timeline li.key{background:linear-gradient(90deg,color-mix(in srgb,var(--flare) 20%,transparent),transparent);margin-inline:-20px;padding-inline:20px}
 .timeline li p{font-size:14.5px}
 .notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:22px}
 .notes div{display:grid;gap:8px;align-content:start}
-.notes h3{font-weight:800;font-size:18px}
+.notes h3{font-weight:900;font-size:22px}
 .notes p,.notes li{font-size:14.5px}
 .notes ul{margin:0;padding-left:18px;display:grid;gap:6px}
 .src{font-size:13px;color:var(--muted);columns:2 320px;column-gap:28px}
 .src a{color:var(--muted)}
 .src li{break-inside:avoid;margin-bottom:6px}
 footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+
+/* hero bore */
+.hero{position:relative;display:grid;gap:22px;padding-top:clamp(8px,2vw,20px)}
+.bore{position:absolute;inset:0 0 auto auto;width:min(46%,520px);height:clamp(320px,40vw,480px);pointer-events:none;z-index:0}
+.hero > *:not(.bore){position:relative;z-index:1}
+.hero h1 span{display:block}
+.hero h1 .sheen{background:var(--sheen);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 9s linear infinite}
+@keyframes sheen{to{background-position:-250% 0}}
+.epigraph{display:grid;gap:4px;max-width:46ch;border-left:3px solid var(--flare);padding:2px 0 2px 14px}
+.epigraph q{font:600 clamp(20px,2.4vw,26px)/1.2 var(--f-display);text-transform:uppercase;letter-spacing:.02em;quotes:"“" "”"}
+.epigraph span{font:12px var(--f-mono);color:var(--muted)}
+.fan{font:12px var(--f-mono);color:var(--muted);letter-spacing:.04em}
+@media (max-width:760px){.bore{position:relative;width:100%;height:220px;inset:auto;order:-1;margin-bottom:-60px;opacity:.75}}
+/* depth gauge on section labels */
+.eyebrow.depth{display:flex;align-items:center;gap:10px;color:var(--ice)}
+.eyebrow.depth::before{content:"";width:22px;height:2px;background:var(--flare)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 
 <div class="wrap">
 
 <header class="hero">
-  <div class="eyebrow">Digger (2026) · Alejandro G. Iñárritu · data as of Oct 11, 2026</div>
-  <h1>Follow the money</h1>
-  <p class="dek">Is the critical pile-on against <em>Digger</em> coming from outlets owned by tech and oil money? We traced every one of the 60 scored reviews on Metacritic up its ownership chain, then compared each critic’s score with their own track record on 16 similar films.</p>
+  <canvas class="bore" id="bore" aria-hidden="true"></canvas>
+  <div class="eyebrow">A Digger fan investigation · Iñárritu, 2026 · data as of Oct 11</div>
+  <h1><span>Who’s</span><span>drilling</span><span class="sheen">Digger?</span></h1>
+  <div class="epigraph"><q>You demand, and I supply.</q><span>— Digger Rockwell, to the European lawmakers</span></div>
+  <p class="dek">A lot of the critical pile-on felt off. So we followed the money: every scored review traced down to whoever ultimately owns the outlet, then checked against that critic’s own track record on 16 similar films. If tech and oil money were burying this movie, it should show up here.</p>
   <div class="verdict">
     <div class="call">
       <span class="eyebrow">What the data says</span>
-      <strong>The money trail goes cold.</strong>
-      <p class="muted" style="font-size:14.5px">Ownership does not predict the score. Outlets with tech money behind them liked <em>Digger</em> <b>more</b> than average. The one group that fits the theory, oil-linked owners, is five reviews, four of them from a single company.</p>
+      <strong>Dry hole.</strong>
+      <p class="muted" style="font-size:14.5px">Who owns an outlet doesn’t predict its verdict, in 60 scored reviews or 280 Rotten Tomatoes reviews. What is real: the most prominent critics turned on <em>Digger</em> hard. They did it at independent outlets just as much as at billionaire-owned ones.</p>
     </div>
     <div class="nums">
       <div class="num"><b class="mono" data-count="0.02" data-dec="2">0.02</b><span>correlation between chain depth and how far a critic fell below their usual</span></div>
       <div class="num"><b class="mono" data-count="13.6" data-dec="1" data-sign="1">+13.6</b><span>points above expectation for outlets with tech-money owners</span></div>
       <div class="num"><b class="mono" data-count="-11.9" data-dec="1" data-sign="1">−11.9</b><span>points below for oil-linked owners (n=5, within chance)</span></div>
-      <div class="num"><b class="mono" data-count="74" data-dec="0" data-suf="%">74%</b><span>RT verified audience score, vs 53% from critics</span></div>
+      <div class="num"><b class="mono" data-count="23" data-dec="0" data-suf="%">23%</b><span>fresh among RT top critics, vs 56% for the other 254 critics</span></div>
     </div>
   </div>
 </header>
 
 <section id="core">
   <div class="sec-head">
-    <div class="eyebrow">01 · The core sample</div>
-    <h2>Every scored critic, layered by who owns them</h2>
+    <div class="eyebrow depth">Depth 1,000 ft · The core sample</div>
+    <h2>Every critic, pulled from their ownership stratum</h2>
     <p class="muted">Each dot is one review. Layers run from critic-owned sites at the surface down to the most concentrated capital. Switch to <b>Versus their usual</b> to see how far each critic landed from what their past reviews predict. Select a dot to drill down its ownership chain.</p>
   </div>
   <div class="controls">
@@ -194,16 +204,30 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
 
 <section id="tests">
   <div class="sec-head">
-    <div class="eyebrow">02 · Testing the theory</div>
-    <h2>Five ways the theory could have shown up</h2>
+    <div class="eyebrow depth">Depth 4,000 ft · Testing the theory</div>
+    <h2>Five places we drilled</h2>
     <p class="muted">For each test we shuffled the ownership labels across critics 20,000 times. If a gap at least as big as the real one turns up often by chance, ownership isn’t explaining it. All tests use “versus their usual” scores, so a naturally harsh critic doesn’t count as hostile.</p>
   </div>
   <div class="tests" id="testgrid"></div>
 </section>
 
+<section id="rtsec">
+  <div class="sec-head">
+    <div class="eyebrow depth">Depth 6,500 ft · 280 Rotten Tomatoes reviews</div>
+    <h2>The big-name critics did turn. Their owners didn’t steer it.</h2>
+    <p class="muted">We pulled 280 of the 319 Rotten Tomatoes critic reviews and traced all 275 outlets. Prominent “top critics” panned <em>Digger</em> far more than everyone else, a gap that chance almost never produces. But split those top critics by who owns them, and the harshness looks the same everywhere.</p>
+  </div>
+  <div class="two">
+    <div class="card"><h3>Top critics vs everyone else</h3><div id="rt-top"></div><p class="muted" style="font-size:14px" id="rt-top-note"></p></div>
+    <div class="card"><h3>The 26 top critics, by owner</h3><p class="muted" style="font-size:14px">Each tile is one top critic. Hover or tap for the name.</p><div id="rt-grid"></div></div>
+    <div class="card"><h3>Fresh rate by owner type</h3><p class="muted" style="font-size:14px" id="rt-type-note"></p><div id="rt-type"></div></div>
+    <div class="card" id="rtcard"><h3>Review by review, by date</h3><p class="muted" style="font-size:14px" id="rtnote"></p><div id="rt"></div></div>
+  </div>
+</section>
+
 <section id="context">
   <div class="sec-head">
-    <div class="eyebrow">03 · The bigger picture</div>
+    <div class="eyebrow depth">Depth 9,000 ft · The reservoir</div>
     <h2>The studio itself changed hands four days after release</h2>
     <p class="muted">If tech and oil money wanted <em>Digger</em> buried, they now own it. Paramount Skydance, controlled by David Ellison and financed in part by Saudi, Qatari and Abu Dhabi funds, closed its purchase of Warner Bros. on October 6.</p>
   </div>
@@ -228,18 +252,14 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
       <p class="muted" style="font-size:14px">The real split is here. People who chose to see it and rate it online like it much more than critics do. Opening-night exit polls sit closer to the critics.</p>
       <div id="aud"></div>
     </div>
-    <div class="card" id="rtcard">
-      <h3>Rotten Tomatoes, review by review</h3>
-      <p class="muted" style="font-size:14px" id="rtnote"></p>
-      <div id="rt"></div>
-    </div>
+
   </div>
 </section>
 
 <section id="limits">
   <div class="sec-head">
-    <div class="eyebrow">04 · What this can and can’t show</div>
-    <h2>Where to dig next</h2>
+    <div class="eyebrow depth">Depth 12,000 ft · Where to drill next</div>
+    <h2>What would strike oil</h2>
   </div>
   <div class="notes">
     <div><h3>What it rules out</h3><p>A simple pattern where outlets higher up a tech or oil ownership chain scored <em>Digger</em> lower. With 60 reviews, a real effect of about 15 points would usually show up. Nothing close does, except for a handful of oil-linked reviews.</p></div>
@@ -251,17 +271,17 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
       <li>Critics saying an editor changed or spiked a review.</li>
       <li>Near-identical talking points published across unrelated outlets at the same time.</li>
       <li>Payment disclosures from accounts pushing the negative takes.</li>
-      <li>The full 319-review Rotten Tomatoes list showing a pattern the 60 Metacritic reviews miss.</li></ul></div>
+      <li>A reason the top critics split from everyone else. Reading their reviews side by side is the next dig.</li></ul></div>
   </div>
 </section>
 
 <section id="method">
   <div class="sec-head">
-    <div class="eyebrow">05 · Method and sources</div>
+    <div class="eyebrow depth">Well log · Method and sources</div>
     <h2>How this was built</h2>
   </div>
   <div class="notes">
-    <div><h3>Scores</h3><p>All 60 Metacritic critic reviews of <em>Digger</em> (Metascore 45–46). Metacritic converts stars and grades to 0–100.</p></div>
+    <div><h3>Scores</h3><p>All 60 Metacritic critic reviews of <em>Digger</em> (Metascore 45–46), plus 280 of 319 Rotten Tomatoes reviews (fresh or rotten), collected Oct 11. The missing 39 are the earliest, mostly major outlets already in the Metacritic set.</p></div>
     <div><h3>“Versus their usual”</h3><p>For each critic we pulled their Metacritic reviews of 18 other films: Iñárritu’s seven earlier features, nine films about oil, tech or wealth (including <em>Don’t Look Up</em>, <em>There Will Be Blood</em> and <em>Eddington</em>), and two recent Cruise films. Their average gap from consensus on those films sets an expected score for <em>Digger</em>. When a critic had fewer than three, we used their outlet’s history.</p></div>
     <div><h3>Ownership</h3><p>Each outlet traced to its ultimate controller as of October 2026, including this year’s sales of The Telegraph, New York Magazine and Polygon. Tech and oil flags mark only documented money; each critic’s panel shows the reason and a source.</p></div>
   </div>
@@ -277,7 +297,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
     <li><a href="https://pressgazette.co.uk/news/saudi-investments-in-evening-standard-and-independent-trigger-government-probe/" target="_blank" rel="noopener">Press Gazette: Saudi investment in The Independent</a></li>
     <li><a href="https://videoweek.com/2026/06/30/the-telegraphs-long-takeover-saga-finally-ends-as-axel-springer-completes-takeover/" target="_blank" rel="noopener">VideoWeek: Axel Springer completes Telegraph takeover</a></li>
   </ul>
-  <footer>Built Oct 11, 2026. Box office for Oct 9–11 is estimated; budgets ($125–180M) and some ownership stakes are disputed and marked as such in the data.</footer>
+  <footer>Fan-made for the Digger community. Not affiliated with Warner Bros., Skydance, Legendary or the filmmakers. Built Oct 11, 2026. Box office for Oct 9–11 is estimated; budgets ($125–180M) and some ownership stakes are disputed and marked as such in the data.</footer>
 </section>
 </div>
 
@@ -299,6 +319,56 @@ document.querySelectorAll('[data-count]').forEach(el => {
   const step = t => { const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3); show(to * e); if (k < 1) requestAnimationFrame(step); };
   requestAnimationFrame(step);
 });
+
+
+/* ---------- hero bore: ice shelf, strata, drill string, crude pocket ---------- */
+(() => {
+  const c = document.getElementById('bore'); if (!c) return;
+  const g = c.getContext('2d'); let w, h, dpr, t0 = performance.now();
+  const strata = [['#D7EEF2',.16],['#A9D8E0',.06],['#3A3A33',.12],['#2E2A21',.14],['#3B3326',.12],['#24231E',.16],['#1A1C19',.24]];
+  function size(){ dpr = Math.min(2, devicePixelRatio||1); w = c.clientWidth; h = c.clientHeight; c.width = w*dpr; c.height = h*dpr; g.setTransform(dpr,0,0,dpr,0,0); }
+  function wave(y, amp, ph){ g.beginPath(); g.moveTo(0,y); for(let x=0;x<=w;x+=8) g.lineTo(x, y + Math.sin(x/47+ph)*amp + Math.sin(x/19+ph*2)*amp*.35); }
+  function draw(now){
+    const t = (now - t0)/1000, k = reduce ? 1 : Math.min(1, t/3.2), e = 1 - Math.pow(1-k, 3);
+    g.clearRect(0,0,w,h);
+    let y = 0;
+    strata.forEach(([col, f], i) => {
+      const yy = y + f*h;
+      wave(y, i<2?2:5, i*1.7); g.lineTo(w, y); g.lineTo(w, h); g.lineTo(0, h); g.closePath();
+      g.fillStyle = col; g.globalAlpha = i<2 ? .9 : .95; g.fill(); g.globalAlpha = 1;
+      y = yy;
+    });
+    // crude pocket
+    const px = w*.62, py = h*.86;
+    const rg = g.createRadialGradient(px, py, 4, px, py, w*.32);
+    rg.addColorStop(0, 'rgba(230,168,90,.55)'); rg.addColorStop(.35, 'rgba(156,140,224,.25)'); rg.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = rg; g.beginPath(); g.ellipse(px, py, w*.32, h*.13, 0, 0, Math.PI*2); g.fill();
+    g.fillStyle = '#050505'; g.beginPath(); g.ellipse(px, py, w*.2, h*.07, 0, 0, Math.PI*2); g.fill();
+    // derrick on the ice
+    const dx = px, base = h*.16;
+    g.strokeStyle = '#ECEBE4'; g.lineWidth = 1.5;
+    g.beginPath(); g.moveTo(dx-18, base); g.lineTo(dx, base-62); g.lineTo(dx+18, base);
+    for (let i=1;i<5;i++){ const yy = base - i*12, s = 18*(1-i/5.2); g.moveTo(dx-s, yy); g.lineTo(dx+s, yy-6); }
+    g.stroke();
+    // flare
+    const fl = 6 + Math.sin(t*9)*2 + Math.sin(t*23)*1.2;
+    g.fillStyle = '#F07A2B'; g.beginPath(); g.ellipse(dx+30, base-30-fl/2, 3, fl, 0, 0, Math.PI*2); g.fill();
+    g.strokeStyle = '#ECEBE4'; g.beginPath(); g.moveTo(dx+18, base); g.lineTo(dx+30, base-28); g.stroke();
+    // drill string descending
+    const depth = base + (py - h*.06 - base) * e;
+    g.strokeStyle = '#ECEBE4'; g.lineWidth = 2; g.beginPath(); g.moveTo(dx, base); g.lineTo(dx, depth); g.stroke();
+    g.fillStyle = '#F07A2B'; g.beginPath(); g.moveTo(dx-5, depth); g.lineTo(dx+5, depth); g.lineTo(dx, depth+9); g.closePath(); g.fill();
+    // cracks spreading in the ice after strike
+    if (k >= 1) {
+      const ct = Math.min(1, (t - 3.2)/2.5);
+      g.strokeStyle = 'rgba(12,13,12,.6)'; g.lineWidth = 1;
+      [[-1,.7],[1,.5],[-1,.3]].forEach(([dir, yy], i) => { g.beginPath(); let x = dx, y0 = h*.03 + yy*h*.1; g.moveTo(x, y0);
+        for (let s=0; s<8*ct; s++){ x += dir*(w*.06); g.lineTo(x, y0 + Math.sin(s*2.1+i)*4); } g.stroke(); });
+    }
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  size(); addEventListener('resize', size); requestAnimationFrame(draw);
+})();
 
 /* ---------- core sample ---------- */
 const LAYERS = {
@@ -535,25 +605,77 @@ const BO = [['Oct 1','Thu',1.2,'prev'],['Oct 2','Fri',3.49],['Oct 3','Sat',2.67]
 })();
 
 /* ---------- RT ---------- */
+const RS = D.rtStats, RT = D.rt;
 (() => {
-  const rt = D.rt, note = document.getElementById('rtnote');
-  if (!rt.length) { note.textContent = 'Not loaded yet.'; return; }
-  const fresh = rt.filter(r=>r.fresh==='POSITIVE').length, top = rt.filter(r=>r.top);
-  note.innerHTML = `${rt.length} of ${D.rtTotal} critic reviews loaded so far (the most recent first). ${Math.round(fresh/rt.length*100)}% of these are fresh, vs ${D.rtScore}% overall.${rt.length < D.rtTotal ? ' The full list will be added when collected.' : ''} Each square is one review, by date posted.`;
-  const byDay = d3.groups(rt, r=>r.date).sort((a,b)=>a[0]<b[0]?-1:1);
-  const w = 520, cell = 9, gap = 2, colW = Math.max(28, Math.floor((w-40)/byDay.length)), maxN = d3.max(byDay,d=>d[1].length);
-  const perCol = Math.max(1, Math.floor((colW-4)/(cell+gap)));
-  const rowsMax = Math.ceil(maxN / perCol), h = rowsMax*(cell+gap) + 40;
+  const rest = RT.filter(r=>!r.top), top = RT.filter(r=>r.top);
+  const A = [['Top critics', RS.top.fresh, RS.top.n], ['Everyone else', RS.top.rest, RT.length - RS.top.n]];
+  const w = 520, h = 120, sv = d3.select('#rt-top').append('svg').attr('viewBox',`0 0 ${w} ${h}`).attr('role','img').attr('aria-label','Fresh rate, top critics versus others');
+  const x = d3.scaleLinear([0,100],[130,w-40]);
+  [0,50,100].forEach(v=>{ sv.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',4).attr('y2',h-20).attr('stroke',css('--faint')); sv.append('text').attr('x',x(v)).attr('y',h-6).attr('text-anchor','middle').text(v+'%'); });
+  A.forEach((d,i)=>{ const y = 26 + i*40;
+    sv.append('text').attr('x',0).attr('y',y+5).attr('fill',css('--ink')).text(`${d[0]} (${d[2]})`);
+    sv.append('rect').attr('x',x(0)).attr('y',y-11).attr('height',22).attr('rx',2).attr('width',0).attr('fill',i?css('--ice'):css('--flare'))
+      .transition().delay(reduce?0:i*150).duration(reduce?0:900).ease(d3.easeCubicOut).attr('width',x(d[1])-x(0));
+    sv.append('text').attr('x',x(d[1])+6).attr('y',y+5).attr('fill',css('--ink')).attr('font-size',13).text(Math.round(d[1])+'% fresh');
+  });
+  document.getElementById('rt-top-note').innerHTML = `Shuffling the “top critic” label at random produced a gap this large only ${(RS.top.p*100).toFixed(1)}% of the time. This is the one pattern in the data that is clearly real.`;
+})();
+(() => {
+  const top = RT.filter(r=>r.top);
+  const grp = r => (r.tech||r.oil||r.type==='billionaire-owned') ? 2 : (r.type==='independent/small'||r.type==='nonprofit/public') ? 0 : 1;
+  const G = [['Independent & public-interest'],['Other corporate owners'],['Tech, oil or billionaire money']].map((g,i)=>({name:g[0], rs: top.filter(r=>grp(r)===i).sort((a,b)=>a.fresh<b.fresh?1:-1)}));
+  const host = d3.select('#rt-grid').style('display','grid').style('gap','14px');
+  G.forEach((g,gi)=>{
+    const f = g.rs.filter(r=>r.fresh==='POSITIVE').length;
+    const row = host.append('div').style('display','grid').style('gap','6px');
+    row.append('div').attr('class','eyebrow').html(`${g.name} · <span style="color:var(--ink)">${f} of ${g.rs.length} fresh (${Math.round(f/g.rs.length*100)}%)</span>`);
+    const tiles = row.append('div').style('display','flex').style('flex-wrap','wrap').style('gap','5px');
+    g.rs.forEach((r,k)=>{
+      tiles.append('span').attr('tabindex',0).attr('title',`${r.critic} · ${r.outlet} · ${r.fresh==='POSITIVE'?'Fresh':'Rotten'}`)
+        .attr('aria-label',`${r.critic}, ${r.outlet}, ${r.fresh==='POSITIVE'?'fresh':'rotten'}`)
+        .style('display','grid').style('place-items','center').style('min-width','0').style('padding','5px 8px').style('border-radius','3px')
+        .style('font','600 11px var(--f-mono)').style('background',r.fresh==='POSITIVE'?'var(--ice)':'var(--flare)').style('color','var(--crude)')
+        .style('opacity',reduce?1:0).style('transform',reduce?'none':'translateY(-8px)').style('transition','opacity .4s, transform .4s')
+        .text(r.outlet.replace(/ \(.*\)/,'').replace('Magazine','').slice(0,22))
+        .each(function(){ const el=this; setTimeout(()=>{el.style.opacity=1;el.style.transform='none';}, reduce?0:200+gi*250+k*60); });
+    });
+  });
+})();
+(() => {
+  const order = [['independent/small','Independent'],['nonprofit/public','Public-interest'],['media company','Private media co.'],['conglomerate/public co','Public conglomerate'],['billionaire-owned','Billionaire-owned']];
+  const extra = [['Tech money', RS.tech.fresh, RS.tech.n],['Oil money', RS.oil.fresh, RS.oil.n]];
+  const rows = order.map(o=>[o[1], RS.by_type[o[0]].fresh, RS.by_type[o[0]].n]).concat(extra);
+  const w = 520, rowH = 28, h = rows.length*rowH + 30, sv = d3.select('#rt-type').append('svg').attr('viewBox',`0 0 ${w} ${h}`).attr('role','img').attr('aria-label','Fresh rate by owner type');
+  const x = d3.scaleLinear([0,100],[170,w-50]);
+  sv.append('line').attr('x1',x(RS.fresh)).attr('x2',x(RS.fresh)).attr('y1',2).attr('y2',h-20).attr('stroke',css('--ink')).attr('stroke-dasharray','2 3').attr('opacity',.7);
+  sv.append('text').attr('x',x(RS.fresh)).attr('y',h-6).attr('text-anchor','middle').text(`all ${Math.round(RS.fresh)}%`);
+  rows.forEach((d,i)=>{ const y = 12 + i*rowH + (i>=order.length?8:0);
+    sv.append('text').attr('x',0).attr('y',y+4).attr('fill',css('--ink')).text(`${d[0]} (${d[2]})`);
+    sv.append('rect').attr('x',x(0)).attr('y',y-7).attr('height',14).attr('rx',2).attr('width',0).attr('fill',ramp(d[1]/100))
+      .transition().delay(reduce?0:i*80).duration(reduce?0:700).ease(d3.easeCubicOut).attr('width',x(d[1])-x(0));
+    sv.append('text').attr('x',x(d[1])+5).attr('y',y+4).attr('fill',css('--ink')).text(Math.round(d[1])+'%');
+  });
+  document.getElementById('rt-type-note').innerHTML = `Oil-linked outlets were harsher (${RS.oil.fresh}% fresh, n=${RS.oil.n}) and so were billionaire-owned ones (n=${RS.billionaire.n}), but both groups are tiny. A gap that big came up by chance ${Math.round(RS.oil.p*100)}% and ${Math.round(RS.billionaire.p*100)}% of the time. Among them, the oil-linked London Evening Standard gave it 5 out of 5.`;
+})();
+(() => {
+  const note = document.getElementById('rtnote');
+  const fresh = RT.filter(r=>r.fresh==='POSITIVE').length;
+  note.innerHTML = `${RT.length} of ${D.rtTotal} reviews, ${Math.round(fresh/RT.length*100)}% fresh (official Tomatometer: ${D.rtScore}%). Each square is one review by the day it was posted; outlined squares are top critics. Reviews kept coming after release, and the late ones lean fresh.`;
+  const byDay = d3.groups(RT, r=>r.date).sort((a,b)=>a[0]<b[0]?-1:1);
+  const w = 520, cell = 8, gap = 2, colW = Math.floor((w-24)/byDay.length);
+  const perCol = Math.max(1, Math.floor((colW-6)/(cell+gap)));
+  const rowsMax = Math.ceil(d3.max(byDay,d=>d[1].length) / perCol), h = rowsMax*(cell+gap) + 40;
   const sv = d3.select('#rt').append('svg').attr('viewBox',`0 0 ${w} ${h}`).attr('role','img').attr('aria-label','Fresh and rotten reviews by date');
   byDay.forEach(([day, rs], ci) => {
-    const x0 = 20 + ci*colW;
+    const x0 = 12 + ci*colW;
     rs.sort((a,b)=>(a.fresh>b.fresh?-1:1)).forEach((r,k)=>{
       const cx = x0 + (k%perCol)*(cell+gap), cy = h - 30 - (Math.floor(k/perCol)+1)*(cell+gap);
       sv.append('rect').attr('x',cx).attr('y',cy).attr('width',cell).attr('height',cell).attr('rx',1.5)
-        .attr('fill',r.fresh==='POSITIVE'?css('--accent'):css('--low')).attr('opacity',0)
+        .attr('fill',r.fresh==='POSITIVE'?css('--ice'):css('--flare')).attr('opacity',reduce?1:0)
         .attr('stroke',r.top?css('--ink'):'none').attr('stroke-width',1.4)
-        .transition().delay(reduce?0:ci*60+k*8).duration(reduce?0:300).attr('opacity',1);
+        .append('title').text(`${r.critic} · ${r.outlet}`);
     });
+    sv.selectAll('rect').transition().delay((d,i)=>reduce?0:i*4).duration(reduce?0:250).attr('opacity',1);
     sv.append('text').attr('x',x0).attr('y',h-14).text(day.slice(5).replace('-','/'));
     sv.append('text').attr('x',x0).attr('y',h-2).text(`${Math.round(rs.filter(r=>r.fresh==='POSITIVE').length/rs.length*100)}%`);
   });
