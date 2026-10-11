@@ -1,0 +1,860 @@
+[
+ {
+  "critic": "Adam Nayman",
+  "outlet": "The Ringer",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": true,
+  "praises_craft": true,
+  "preachy": true,
+  "unfunny": null,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": true,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Relentless, hubristic self-critique; insights basic and derivative of Kubrick/Verhoeven",
+  "main_praise": "Real nerve; undeniable directorial dexterity and spectacle",
+  "key_quote": "they’re two sides of the same inflated counterfeit coin",
+  "verdict_basis": "both",
+  "notes": "Calls Iñárritu's dexterity 'as undeniable as his hubris' with 'a masturbatory dimension'; 'salable fatalism'.",
+  "url": "https://www.theringer.com/2026/10/05/movies/digger-review-tom-cruise-alejandro-inarritu"
+ },
+ {
+  "critic": "Dana Stevens",
+  "outlet": "Slate",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": true,
+  "praises_craft": true,
+  "preachy": true,
+  "unfunny": true,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": true,
+  "dont_look_up": {
+   "present": true,
+   "stance": "unfavorable to Digger ('even Don't Look Up is better')"
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Laugh-free, cacophonous, didactic; meta twist even less engaging than the story",
+  "main_praise": "Admirable big swing in theory; dazzling production design, virtuoso single takes",
+  "key_quote": "There's a difference between being high concept and being high on your own supply.",
+  "verdict_basis": "execution",
+  "notes": "Parliament speech called 'ideologically ham-handed'; Cruise 'startlingly fearless' but script lets cast only 'demonstrate'.",
+  "url": "https://slate.com/culture/2026/10/digger-tom-cruise-movie-reviews-oscars-best-actor-john-goodman.html"
+ },
+ {
+  "critic": "Wendy Ide",
+  "outlet": "Observer (UK)",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Brash, self-indulgent eco-satire with nothing to say",
+  "main_praise": null,
+  "key_quote": "Digger is a brash, self-indulgent eco-satire with nothing to say",
+  "verdict_basis": "both",
+  "notes": "Fetch blocked; no search excerpts found. Coded only from headline embedded in the review URL slug.",
+  "url": "https://observer.co.uk/culture/film/article/digger-is-a-brash-self-indulgent-eco-satire-with-nothing-to-say"
+ },
+ {
+  "critic": "Mark Kermode",
+  "outlet": "Kermode and Mayo's Take (YouTube)",
+  "fresh": false,
+  "text_seen": "none",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": null,
+  "main_praise": null,
+  "key_quote": null,
+  "verdict_basis": null,
+  "notes": "YouTube video; no transcript/description retrievable and no search excerpts found. All fields null.",
+  "url": "https://www.youtube.com/watch?v=ywqociU29js"
+ },
+ {
+  "critic": "David Sims",
+  "outlet": "The Atlantic",
+  "fresh": true,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "neutral (conceit reveal noted)"
+  },
+  "politics_of_critic": null,
+  "main_complaint": null,
+  "main_praise": "Grand black comedy evoking a modern Dr. Strangelove",
+  "key_quote": "Iñárritu’s grand black comedy initially seems like a modern Dr. Strangelove—a bleak satire of the end of the world",
+  "verdict_basis": "execution",
+  "notes": "Fetch blocked (theatlantic.com); coded from MC quote only.",
+  "url": "https://www.theatlantic.com/culture/2026/10/digger-movie-review-tom-cruise-spoilers/688861/"
+ },
+ {
+  "critic": "Scott Tobias",
+  "outlet": "The Reveal",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": null,
+  "praises_ambition": true,
+  "praises_craft": true,
+  "preachy": true,
+  "unfunny": true,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "liked (structural surprises 'partially redeem it')"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Ham-handed dialogue, self-serious, few laughs; dumb, loud, hopeless",
+  "main_praise": "Heroic willingness to spend Hollywood capital; structural surprises",
+  "key_quote": "it feels like an Armando Iannucci rewrite away from being a masterpiece",
+  "verdict_basis": "execution",
+  "notes": "Cruise 'spam[s]' his image's 'most grotesque manifestation' (ambivalent, coded null). Critic agrees with climate message.",
+  "url": "https://thereveal.film/in-review-digger-verity/"
+ },
+ {
+  "critic": "Peter Travers",
+  "outlet": "The Travers Take",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": null,
+  "praises_craft": true,
+  "preachy": true,
+  "unfunny": true,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": true,
+   "stance": "neutral (quotes 'two-day delivery' speech, no judgment)"
+  },
+  "toothless_satire": true,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "neutral (late twist, names 'Fossil Fools')"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Clanking symbolism, deafening volume, pompous; satire doesn't sting",
+  "main_praise": "Cruise's fervent commitment; stunning production design",
+  "key_quote": "The clanking symbolism is as deadening as the decibel level is deafening.",
+  "verdict_basis": "execution",
+  "notes": "Input URL (/featured/verity/) was a Verity review; Digger review found at thetraverstake.com/featured/digger/.",
+  "url": "https://www.thetraverstake.com/featured/digger/"
+ },
+ {
+  "critic": "Manohla Dargis",
+  "outlet": "New York Times",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Cartoony performances; strong actors badly handled",
+  "main_praise": "Plemons's restrained, specific performance",
+  "key_quote": "It’s a bummer to see actors like Goodman, Stuhlbarg and Riz Ahmed so badly handled.",
+  "verdict_basis": "execution",
+  "notes": "Fetch blocked (nytimes.com). Secondhand Spanish-language roundup attributes 'a white elephant so clumsy it almost provokes pity' to NYT (translated; not used for coding).",
+  "url": "https://www.nytimes.com/2026/10/01/movies/digger-review-tom-cruise-alejandro-inarritu.html"
+ },
+ {
+  "critic": "Ty Burr",
+  "outlet": "Ty Burr's Watch List (Substack)",
+  "fresh": true,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": true,
+  "praises_craft": true,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": true,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": true,
+   "stance": "neutral (film's theme of America turning disasters into entertainment)"
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": true,
+   "stance": "neutral (listed among meteor movies)"
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "neutral (tech-rehearsal framing described)"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Bloated, derivative; ends in a depressive shrug rather than action",
+  "main_praise": "Cruise's all-in performance; maximalist VistaVision spectacle; 'I had a good time'",
+  "key_quote": "Sue me, I had a good time.",
+  "verdict_basis": "both",
+  "notes": null,
+  "url": "https://www.tyburrswatchlist.com/apocalypse-yow-digger/"
+ },
+ {
+  "critic": "Justin Chang",
+  "outlet": "The New Yorker",
+  "fresh": true,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": true,
+  "preachy": true,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Bludgeoning overkill of the film's verbiage",
+  "main_praise": "Playful sublimity of visuals; technique transcends gimmickry",
+  "key_quote": "Seldom have I encountered a greater disjunction between the bludgeoning overkill of a film’s verbiage and the playful sublimity of its visuals.",
+  "verdict_basis": "execution",
+  "notes": "Fetch blocked (newyorker.com). Search snippet (secondhand) says Chang called it 'extremely obnoxious and often unlikable' but still liked it; not used for coding.",
+  "url": "https://www.newyorker.com/magazine/2026/10/12/digger-movie-review"
+ },
+ {
+  "critic": "Hannah Strong",
+  "outlet": "Little White Lies",
+  "fresh": true,
+  "text_seen": "full",
+  "praises_cruise": false,
+  "praises_ambition": null,
+  "praises_craft": true,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": true,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked (mocks 'satirising the very concept of satire')"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Satire with no meaningful target; self-satisfied; Cruise's 'most acting' hamming",
+  "main_praise": "Gassner's production design and Lubezki's intentional cinematography",
+  "key_quote": "A satire with no meaningful target rarely has much value.",
+  "verdict_basis": "both",
+  "notes": "Rated 3/5 but RT fresh; body is largely negative. 'loud' coded from 'overstuffed'.",
+  "url": "https://lwlies.com/reviews/digger"
+ },
+ {
+  "critic": "Stephanie Zacharek",
+  "outlet": "TIME Magazine",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": false,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": true,
+  "unfunny": true,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": true,
+   "stance": "criticizes (complicity speech is 'nothing but a scolding rant')"
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked ('just an excuse' for sets-within-sets)"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Aggressively unfunny, scolding, self-promoting; trickery with nothing to say",
+  "main_praise": "Lubezki's gifts; a 'cool' set-within-set effect",
+  "key_quote": "a movie that insists it's digging for the truth, when all it's really doing is shoveling",
+  "verdict_basis": "execution",
+  "notes": "Craft mixed ('drab-looking', 'cool effect—and yet, so what?') so coded null. Critic says you can agree with message and still find film unpersuasive.",
+  "url": "https://time.com/article/2026/09/29/digger-review/"
+ },
+ {
+  "critic": "Wenlei Ma",
+  "outlet": "The Nightly (AU)",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": null,
+  "praises_craft": true,
+  "preachy": true,
+  "unfunny": null,
+  "loud_exhausting": true,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": true,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "neutral (early structural twist)"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Overplays its hand; never stops shouting; no new ideas, dated tropes",
+  "main_praise": "Cruise is good; mesmerising one-shot sequence",
+  "key_quote": "It doesn't stop shouting at you – literally and metaphorically.",
+  "verdict_basis": "both",
+  "notes": "Comedy mixed (some laughs vs. 'failed at satire') coded null. Also faults film for letting Big Tech/AI off the hook.",
+  "url": "https://thenightly.com.au/culture/film/digger-movie-review-tom-cruises-acting-comeback-never-stops-shouting-at-you-c-22946321"
+ },
+ {
+  "critic": "Kristy Puchko",
+  "outlet": "Mashable",
+  "fresh": false,
+  "text_seen": "none",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": null,
+  "main_praise": null,
+  "key_quote": null,
+  "verdict_basis": null,
+  "notes": "Fetch blocked (mashable.com); no excerpts found via search; no MC quote. All fields null.",
+  "url": "https://mashable.com/entertainment/digger-review-tom-cruise"
+ },
+ {
+  "critic": "Katie Walsh",
+  "outlet": "Tribune News Service",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": null,
+  "praises_craft": true,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": true,
+   "stance": "criticizes (condescending; 'insistence on blaming the individual')"
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": true,
+   "stance": "unfavorable (shares Don't Look Up's condescension to audience)"
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "neutral (proscenium as clue to artifice)"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Blames everyone, condescends to audience; muddled message, too many cooks",
+  "main_praise": "Cruise's wild, spellbinding, fully committed performance; Lubezki's camera",
+  "key_quote": "in terms of its message, 'Digger' doesn't have any worthwhile wisdom to impart",
+  "verdict_basis": "message",
+  "notes": null,
+  "url": "https://www.spokesman.com/stories/2026/sep/29/movie-review-digger-has-fully-committed-tom-cruise/"
+ },
+ {
+  "critic": "Odie Henderson",
+  "outlet": "Boston Globe",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": false,
+  "praises_ambition": false,
+  "praises_craft": false,
+  "preachy": true,
+  "unfunny": true,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Turgid, unfunny, self-congratulatory; stops to explain its themes",
+  "main_praise": "Essentially none (only the cat)",
+  "key_quote": "there aren't two-and-a-half minutes of a good movie in this turgid, unfunny, and borderline unwatchable 128-minute mess",
+  "verdict_basis": "execution",
+  "notes": "0/4. Names 'Fossil Fools'. Mocks film showing ovations for its own plot.",
+  "url": "https://www.bostonglobe.com/2026/09/29/arts/digger-tom-cruise/"
+ },
+ {
+  "critic": "David Fear",
+  "outlet": "Rolling Stone",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Messy, ungainly, clever to a fault; doesn't work in almost any capacity",
+  "main_praise": "Purposeful, impossible to simply dismiss",
+  "key_quote": "It’s impossible to simply dismiss as a mistake, and equally impossible to declare that it works in almost any capacity.",
+  "verdict_basis": "execution",
+  "notes": "Rolling Stone redirected to paywalled tollbit (402). MC quote only.",
+  "url": "https://www.rollingstone.com/tv-movies/tv-movie-reviews/digger-tom-cruise-review-1235629957/"
+ },
+ {
+  "critic": "Philip De Semlyen",
+  "outlet": "Time Out",
+  "fresh": true,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": true,
+  "praises_craft": true,
+  "preachy": true,
+  "unfunny": false,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "liked ('jack-knifes' meta-narrative)"
+  },
+  "politics_of_critic": false,
+  "main_complaint": "Bluntness; manic energy some will find exhausting",
+  "main_praise": "Cruise's touching performance; mordantly funny, surprising, ambitious",
+  "key_quote": "don't listen to anyone who tells you it isn't funny.",
+  "verdict_basis": "execution",
+  "notes": "'preachy' coded true only on the concession 'Subtle? Nope.'",
+  "url": "https://www.timeout.com/movies/digger-review-2026"
+ },
+ {
+  "critic": "Bilge Ebiri",
+  "outlet": "New York Magazine/Vulture",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked ('wildly miscalculated rug-pulling')"
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Crazy performances, directorial grandstanding, miscalculated rug-pull",
+  "main_praise": "Genuine current of civilizational despair",
+  "key_quote": "a genuine current of civilizational despair runs through Digger",
+  "verdict_basis": "both",
+  "notes": "Fetch blocked (vulture.com). MC quote + URL headline 'a brazen act of self-sabotage'. Self-indulgent coded from 'directorial grandstanding'.",
+  "url": "https://www.vulture.com/article/review-digger-is-a-brazen-act-of-self-sabotage.html"
+ },
+ {
+  "critic": "Robert Daniels",
+  "outlet": "RogerEbert.com",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Chokes on its own ambitions",
+  "main_praise": null,
+  "key_quote": "Digger chokes on its own ambitions, and very few of the picture’s participants emerge still breathing.",
+  "verdict_basis": "execution",
+  "notes": "rogerebert.com returned 403. MC quote only.",
+  "url": "https://www.rogerebert.com/reviews/digger-tom-cruise-alejandro-gonzalez-inarritu-film-review-2026"
+ },
+ {
+  "critic": "Robbie Collin",
+  "outlet": "Daily Telegraph (UK)",
+  "fresh": true,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": true,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": null,
+  "main_praise": "Risky high-wire act that keeps you guessing",
+  "key_quote": "Risky art is often called a high-wire act, but Tom Cruise’s latest film really earns the label.",
+  "verdict_basis": "execution",
+  "notes": "Fetch blocked (telegraph.co.uk). MC quote only.",
+  "url": "https://www.telegraph.co.uk/films/2026/09/29/digger-review-tom-cruise/"
+ },
+ {
+  "critic": "Monica Castillo",
+  "outlet": "AV Club",
+  "fresh": false,
+  "text_seen": "full",
+  "praises_cruise": true,
+  "praises_ambition": null,
+  "praises_craft": false,
+  "preachy": true,
+  "unfunny": true,
+  "loud_exhausting": null,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": true,
+  "dont_look_up": {
+   "present": true,
+   "stance": "unfavorable ('retreading' Don't Look Up)"
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": false,
+  "main_complaint": "All style, no substance; obvious message; no wit or emotional depth",
+  "main_praise": "Cruise relishes behaving badly and carries the film",
+  "key_quote": "Digger lacks emotional depth, being much more interested in the showmanship of tricks and razzle-dazzle than character development.",
+  "verdict_basis": "both",
+  "notes": "Visuals criticized ('as if someone spilled bleach').",
+  "url": "https://www.avclub.com/digger-review-tom-cruise-alejandro-inarritu-all-style-no-substance"
+ },
+ {
+  "critic": "Tim Grierson",
+  "outlet": "Screen International",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": true,
+  "praises_craft": null,
+  "preachy": true,
+  "unfunny": null,
+  "loud_exhausting": true,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked ('meta twist that further alienates')"
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Gratingly unsubtle comedic approach; alienating meta twist",
+  "main_praise": "Cruise's risky, occasionally ferocious portrait",
+  "key_quote": "this ambitious misfire is consistently sabotaged by Iñárritu’s gratingly unsubtle comedic approach",
+  "verdict_basis": "execution",
+  "notes": "screendaily.com 405. MC quote + headline ('Tom Cruise fails to convince') -> Cruise coded null (mixed).",
+  "url": "https://www.screendaily.com/reviews/digger-review-tom-cruise-fails-to-convince-as-a-bullish-texas-oilman-in-alejandro-g-inarritus-ambitious-misfire/5220616.article"
+ },
+ {
+  "critic": "Clarisse Loughrey",
+  "outlet": "Independent (UK)",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": null,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": null,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked (self-reflexive suggestion its existence is pointless)"
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Doesn't work, then indulges the idea that it's pointless",
+  "main_praise": null,
+  "key_quote": "why did any of us, filmmaker or audience, bother in the first place?",
+  "verdict_basis": "execution",
+  "notes": "Fetch blocked (the-independent.com). MC quote only; play_frame inferred from meta/self-reflexive reference, weak.",
+  "url": "https://www.the-independent.com/arts-entertainment/films/reviews/digger-review-tom-cruise-twist-release-date-b3058088.html"
+ },
+ {
+  "critic": "Peter Bradshaw",
+  "outlet": "Guardian",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": null,
+  "praises_craft": true,
+  "preachy": null,
+  "unfunny": null,
+  "loud_exhausting": true,
+  "self_indulgent": true,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": true,
+   "stance": "disliked ('postmodern hole')"
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Glib, overblown, superficial, self-indulgent",
+  "main_praise": "Dreamlike images by Lubezki and Gassner (secondhand)",
+  "key_quote": "There is something glib and overblown here. This film finds itself in a postmodern hole.",
+  "verdict_basis": "execution",
+  "notes": "Fetch blocked (theguardian.com). self_indulgent and praises_craft coded from a SECONDHAND Spanish-language roundup (kchcomunicacion.com) translating Bradshaw as 'exasperating, superficial, laborious and self-indulgent' with praise for Lubezki/Gassner imagery.",
+  "url": "https://www.theguardian.com/film/2026/sep/29/digger-review-tom-cruise-satire-alejandro-gonzalez-inarritu"
+ },
+ {
+  "critic": "Owen Gleiberman",
+  "outlet": "Variety",
+  "fresh": false,
+  "text_seen": "quote_only",
+  "praises_cruise": null,
+  "praises_ambition": true,
+  "praises_craft": null,
+  "preachy": true,
+  "unfunny": true,
+  "loud_exhausting": true,
+  "self_indulgent": null,
+  "consumer_blame": {
+   "present": null,
+   "stance": null
+  },
+  "toothless_satire": null,
+  "dont_look_up": {
+   "present": null,
+   "stance": null
+  },
+  "play_frame": {
+   "present": null,
+   "stance": null
+  },
+  "politics_of_critic": null,
+  "main_complaint": "Isn't funny; relentless overacting; overscaled browbeating spectacle",
+  "main_praise": "Nervy, adventurous, free-swinging",
+  "key_quote": "Here’s the real problem: “Digger” isn’t funny.",
+  "verdict_basis": "execution",
+  "notes": "Variety redirected to paywalled tollbit (402). MC quote only.",
+  "url": "https://variety.com/2026/film/reviews/digger-review-tom-cruise-alejandro-g-inarritu-1236872535/"
+ }
+]

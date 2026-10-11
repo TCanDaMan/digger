@@ -125,6 +125,12 @@ blockquote{margin:0;padding-left:12px;border-left:2px solid var(--line);font-sty
 .timeline .d{font:600 12px var(--f-mono);color:var(--muted);padding-top:2px}
 .timeline li.key{background:linear-gradient(90deg,color-mix(in srgb,var(--flare) 20%,transparent),transparent);margin-inline:-20px;padding-inline:20px}
 .timeline li p{font-size:14.5px}
+.quotes{display:grid;gap:12px}
+.quotes figure{margin:0;display:grid;gap:4px;padding-left:12px;border-left:3px solid var(--line)}
+.quotes figure.f{border-color:var(--ice)}
+.quotes figure.r{border-color:var(--flare)}
+.quotes blockquote{border:0;padding:0;font:600 17px/1.3 var(--f-body);font-style:normal}
+.quotes figcaption{font:11.5px var(--f-mono);color:var(--muted)}
 .notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:22px}
 .notes div{display:grid;gap:8px;align-content:start}
 .notes h3{font-weight:900;font-size:22px}
@@ -225,6 +231,46 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
   </div>
 </section>
 
+<section id="split">
+  <div class="sec-head">
+    <div class="eyebrow depth">Depth 8,000 ft · Why the big names split</div>
+    <h2>They didn’t reject its politics. They rejected its execution.</h2>
+    <p class="muted">We read the 26 top critics’ reviews alongside a random 40 from everyone else, and tagged what each one praised and criticized. Then we checked the top critics’ track records on Iñárritu’s earlier films.</p>
+  </div>
+  <div class="two">
+    <div class="card">
+      <span class="badge">Finding 1</span>
+      <h3>Lukewarm, not hostile</h3>
+      <p class="muted" style="font-size:14px">The typical top critic gave it about 2.5 stars out of 5 (50/100). Rotten Tomatoes counts that as rotten. The typical other critic gave it 70. Every dot is a review that came with a star or letter grade, converted to 0–100.</p>
+      <div id="split-strip"></div>
+    </div>
+    <div class="card">
+      <span class="badge">Finding 2</span>
+      <h3>An old skepticism of late Iñárritu</h3>
+      <p class="muted" style="font-size:14px">On <em>Digger</em>, top critics scored right where their own histories predict (+0.3). The rest of the field went 7.6 points above theirs. The same top critics were also cooler than everyone else on <em>Biutiful</em>, <em>Bardo</em> and <em>Eddington</em>. They weren’t on <em>Birdman</em> or <em>The Revenant</em>.</p>
+      <div id="split-hist"></div>
+    </div>
+    <div class="card" style="grid-column:1/-1">
+      <span class="badge">Finding 3</span>
+      <h3>Same film, different forgiveness</h3>
+      <p class="muted" style="font-size:14px">Share of readable reviews raising each point. Both groups noticed it was loud and on-the-nose. What separated them: top critics far more often called it self-indulgent and unfunny, and far less often credited its ambition. Not one top critic objected to the climate message itself.</p>
+      <div id="split-themes"></div>
+    </div>
+    <div class="card">
+      <h3>The two dividing lines</h3>
+      <ul class="timeline">
+        <li><span class="d">Speech</span><p><b>“You demand, and I supply.”</b> Six critics who liked the film praised it for implicating the audience: “it’s us, the regular citizens.” No top critic praised it. Two called it “a scolding rant” and “unpleasantly condescending.”</p></li>
+        <li><span class="d">Twist</span><p><b>The <em>Fossil Fools</em> reveal.</b> Most fans who mentioned it loved it, one calling it “a genius move.” Most top critics who mentioned it disliked it, calling it “just an excuse” or “satirising the very concept of satire.”</p></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>In their words</h3>
+      <div class="quotes" id="split-quotes"></div>
+    </div>
+  </div>
+  <p class="muted" style="font-size:13.5px">Caveats: only 12 of the 26 top-critic reviews could be read in full (The New York Times, The Guardian, Variety, The New Yorker and others are paywalled). Themes were tagged by AI reading each review against a fixed checklist. Among these gaps, only “self-indulgent” clears chance on its own (p = 0.04); the rest point the same way but are small samples.</p>
+</section>
+
 <section id="context">
   <div class="sec-head">
     <div class="eyebrow depth">Depth 9,000 ft · The reservoir</div>
@@ -271,7 +317,7 @@ footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);paddin
       <li>Critics saying an editor changed or spiked a review.</li>
       <li>Near-identical talking points published across unrelated outlets at the same time.</li>
       <li>Payment disclosures from accounts pushing the negative takes.</li>
-      <li>A reason the top critics split from everyone else. Reading their reviews side by side is the next dig.</li></ul></div>
+      <li>Full text of the paywalled top-critic reviews, to firm up the theme counts.</li></ul></div>
   </div>
 </section>
 
@@ -574,6 +620,74 @@ tests.forEach((t,i) => {
     sv.append('text').attr('x',g[1]>=0?Math.min(w-30,x(Math.min(25,g[1]))+4):x(Math.max(-25,g[1]))-4).attr('y',y+4).attr('text-anchor',g[1]>=0?'start':'end').attr('fill',css('--ink')).text(fmtS(g[1]));
   });
 });
+
+
+/* ---------- why the big names split ---------- */
+const SPLIT = {"top":[{"s":50,"f":false,"c":"Scott Tobias","o":"The Reveal"},{"s":50,"f":false,"c":"Peter Travers","o":"The Travers Take"},{"s":75,"f":true,"c":"Ty Burr","o":"Ty Burr's Watch List (Substack)"},{"s":60,"f":true,"c":"Hannah Strong","o":"Little White Lies"},{"s":40,"f":false,"c":"Wenlei Ma","o":"The Nightly (AU)"},{"s":50,"f":false,"c":"Katie Walsh","o":"Tribune News Service"},{"s":0,"f":false,"c":"Odie Henderson","o":"Boston Globe"},{"s":80,"f":true,"c":"Philip De Semlyen","o":"Time Out"},{"s":50,"f":false,"c":"Robert Daniels","o":"RogerEbert.com"},{"s":80,"f":true,"c":"Robbie Collin","o":"Daily Telegraph (UK)"},{"s":60,"f":false,"c":"Monica Castillo","o":"AV Club"},{"s":40,"f":false,"c":"Clarisse Loughrey","o":"Independent (UK)"},{"s":40,"f":false,"c":"Peter Bradshaw","o":"Guardian"}],"rest":[{"s":75,"f":true},{"s":88,"f":true},{"s":70,"f":true},{"s":70,"f":true},{"s":40,"f":false},{"s":70,"f":true},{"s":80,"f":true},{"s":60,"f":false},{"s":40,"f":false},{"s":25,"f":false},{"s":95,"f":true},{"s":80,"f":true},{"s":70,"f":false},{"s":90,"f":true},{"s":80,"f":true},{"s":70,"f":false},{"s":75,"f":true},{"s":70,"f":true},{"s":40,"f":false},{"s":80,"f":true},{"s":60,"f":true},{"s":90,"f":true},{"s":70,"f":true},{"s":75,"f":true},{"s":40,"f":false},{"s":50,"f":false},{"s":100,"f":true},{"s":80,"f":true},{"s":80,"f":true},{"s":50,"f":false},{"s":70,"f":true},{"s":70,"f":false},{"s":40,"f":false},{"s":80,"f":true},{"s":62,"f":false},{"s":55,"f":false},{"s":60,"f":false},{"s":60,"f":true},{"s":40,"f":false},{"s":88,"f":true},{"s":70,"f":true},{"s":50,"f":false},{"s":30,"f":false},{"s":30,"f":false},{"s":60,"f":true},{"s":38,"f":false},{"s":40,"f":false},{"s":100,"f":true},{"s":38,"f":false},{"s":60,"f":true},{"s":90,"f":true},{"s":50,"f":false},{"s":100,"f":true},{"s":70,"f":true},{"s":12,"f":false},{"s":70,"f":true},{"s":80,"f":true},{"s":75,"f":true},{"s":70,"f":true},{"s":100,"f":true},{"s":60,"f":true},{"s":40,"f":false},{"s":80,"f":true},{"s":38,"f":false},{"s":55,"f":false},{"s":40,"f":false},{"s":80,"f":true},{"s":95,"f":true},{"s":38,"f":false},{"s":50,"f":false},{"s":38,"f":false},{"s":80,"f":true},{"s":40,"f":false},{"s":60,"f":false},{"s":50,"f":false},{"s":38,"f":false},{"s":50,"f":false},{"s":40,"f":false},{"s":85,"f":true},{"s":62,"f":true},{"s":85,"f":true},{"s":90,"f":true},{"s":40,"f":false},{"s":40,"f":false},{"s":80,"f":true},{"s":38,"f":false},{"s":40,"f":false},{"s":60,"f":true},{"s":90,"f":true},{"s":80,"f":true},{"s":80,"f":true},{"s":60,"f":true},{"s":60,"f":true},{"s":90,"f":true},{"s":75,"f":true},{"s":40,"f":false},{"s":40,"f":false},{"s":75,"f":true},{"s":60,"f":true},{"s":62,"f":true},{"s":50,"f":false},{"s":90,"f":true},{"s":80,"f":true},{"s":95,"f":true},{"s":40,"f":false},{"s":40,"f":false},{"s":100,"f":true},{"s":80,"f":true},{"s":85,"f":true},{"s":90,"f":true},{"s":60,"f":true},{"s":80,"f":true},{"s":50,"f":false},{"s":40,"f":false},{"s":40,"f":false},{"s":40,"f":false},{"s":40,"f":false},{"s":90,"f":true},{"s":80,"f":true},{"s":85,"f":true},{"s":40,"f":false},{"s":40,"f":false},{"s":80,"f":true},{"s":40,"f":false},{"s":70,"f":true},{"s":70,"f":true},{"s":95,"f":true},{"s":50,"f":false},{"s":100,"f":true},{"s":90,"f":true},{"s":80,"f":true},{"s":80,"f":true},{"s":100,"f":true},{"s":60,"f":false},{"s":50,"f":false},{"s":50,"f":false},{"s":60,"f":true},{"s":12,"f":false},{"s":90,"f":true},{"s":60,"f":true},{"s":50,"f":false},{"s":65,"f":false},{"s":70,"f":true},{"s":70,"f":true},{"s":50,"f":false},{"s":80,"f":true},{"s":20,"f":false},{"s":90,"f":true},{"s":40,"f":false},{"s":100,"f":true},{"s":40,"f":false},{"s":80,"f":true},{"s":70,"f":true},{"s":40,"f":false},{"s":60,"f":true},{"s":80,"f":true},{"s":70,"f":true},{"s":40,"f":false},{"s":85,"f":true},{"s":30,"f":false},{"s":90,"f":true},{"s":80,"f":true},{"s":80,"f":true},{"s":50,"f":false},{"s":50,"f":false},{"s":75,"f":true},{"s":85,"f":true},{"s":100,"f":true},{"s":60,"f":true}]};
+(() => {
+  const w = 520, h = 150, sv = d3.select('#split-strip').append('svg').attr('viewBox',`0 0 ${w} ${h}`).attr('role','img').attr('aria-label','Score strips, top critics versus others');
+  const x = d3.scaleLinear([0,100],[110,w-14]);
+  [0,25,50,75,100].forEach(v=>{ sv.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',6).attr('y2',h-22).attr('stroke',css('--faint')); sv.append('text').attr('x',x(v)).attr('y',h-6).attr('text-anchor','middle').text(v); });
+  [['top','Top critics',38],['rest','Everyone else',96]].forEach(([k,lab,y])=>{
+    const arr = SPLIT[k];
+    sv.append('text').attr('x',0).attr('y',y+4).attr('fill',css('--ink')).text(`${lab} (${arr.length})`);
+    const med = d3.median(arr, d=>d.s);
+    arr.forEach((d,i)=>{ const jy = y + ((i*37)%23 - 11);
+      sv.append('circle').attr('cx',x(d.s)).attr('cy',reduce?jy:y-60).attr('r',4).attr('fill',d.f?css('--ice'):css('--flare')).attr('opacity',.85)
+        .transition().delay(reduce?0:i*6).duration(reduce?0:600).ease(d3.easeBounceOut).attr('cy',jy); });
+    sv.append('line').attr('x1',x(med)).attr('x2',x(med)).attr('y1',y-18).attr('y2',y+18).attr('stroke',css('--ink')).attr('stroke-width',2.5);
+    sv.append('text').attr('x',x(med)).attr('y',y-22).attr('text-anchor','middle').attr('fill',css('--ink')).text('median '+med);
+  });
+})();
+(() => {
+  const H = [['Birdman',-2,0.8],['The Revenant',3.1,3.0],['Biutiful',-10.6,7.8],['Bardo',-9.3,6.2],['Eddington',-8.3,3.8],['Digger (vs. own usual)',0.3,7.6]];
+  const w = 520, rowH = 34, h = H.length*rowH + 52, sv = d3.select('#split-hist').append('svg').attr('viewBox',`0 0 ${w} ${h}`).attr('role','img').attr('aria-label','Points above or below consensus, top critics versus others');
+  const x = d3.scaleLinear([-14,14],[170,w-30]);
+  sv.append('line').attr('x1',x(0)).attr('x2',x(0)).attr('y1',4).attr('y2',h-40).attr('stroke',css('--ink')).attr('stroke-dasharray','2 3').attr('opacity',.6);
+  [-10,0,10].forEach(v=>sv.append('text').attr('x',x(v)).attr('y',h-24).attr('text-anchor','middle').text(v>0?'+'+v:v));
+  H.forEach((d,i)=>{ const y = 14 + i*rowH;
+    sv.append('text').attr('x',0).attr('y',y+8).attr('fill',css('--ink')).text(d[0]);
+    [[d[1],css('--flare'),0],[d[2],css('--ice'),11]].forEach(([v,c,o])=>{
+      sv.append('rect').attr('x',x(0)).attr('y',y+o-1).attr('height',9).attr('rx',1.5).attr('width',0).attr('fill',c)
+        .transition().delay(reduce?0:i*110).duration(reduce?0:700).ease(d3.easeCubicOut).attr('x',Math.min(x(0),x(v))).attr('width',Math.abs(x(v)-x(0)));
+    });
+  });
+  const lg = sv.append('g').attr('transform',`translate(170,${h-2})`);
+  lg.append('rect').attr('width',9).attr('height',9).attr('y',-8).attr('fill',css('--flare')); lg.append('text').attr('x',13).text('top critics');
+  lg.append('rect').attr('x',90).attr('width',9).attr('height',9).attr('y',-8).attr('fill',css('--ice')); lg.append('text').attr('x',103).text('everyone else');
+})();
+(() => {
+  const TH = [['Called it self-indulgent',67,29,'p = 0.04'],['Said it isn’t funny',50,23,''],['Called it preachy',75,57,''],['Called it loud or exhausting',75,57,''],['Credited its ambition',42,71,''],['Praised Cruise',67,74,''],['Objected to its climate politics',0,6,'']];
+  const w = 1000, rowH = 34, h = TH.length*rowH + 50, sv = d3.select('#split-themes').append('svg').attr('viewBox',`0 0 ${w} ${h}`).attr('role','img').attr('aria-label','Share of reviews raising each theme, top critics versus others');
+  const x = d3.scaleLinear([0,100],[270,w-190]);
+  [0,25,50,75,100].forEach(v=>{ sv.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',4).attr('y2',h-42).attr('stroke',css('--faint')); sv.append('text').attr('x',x(v)).attr('y',h-26).attr('text-anchor','middle').text(v+'%'); });
+  TH.forEach((d,i)=>{ const y = 16 + i*rowH;
+    sv.append('text').attr('x',0).attr('y',y+5).attr('fill',css('--ink')).attr('font-size',13).text(d[0]);
+    sv.append('line').attr('x1',x(Math.min(d[1],d[2]))).attr('x2',x(Math.max(d[1],d[2]))).attr('y1',y).attr('y2',y).attr('stroke',css('--line')).attr('stroke-width',4);
+    [[d[2],css('--ice'),'others'],[d[1],css('--flare'),'top']].forEach(([v,c],k)=>{
+      sv.append('circle').attr('cx',x(50)).attr('cy',y).attr('r',8).attr('fill',c).attr('stroke',css('--paper')).attr('stroke-width',2)
+        .transition().delay(reduce?0:200+i*90).duration(reduce?0:800).ease(d3.easeCubicOut).attr('cx',x(v));
+    });
+    sv.append('text').attr('x',w-170).attr('y',y+4).attr('fill',css('--ink')).text(`${d[1]}% vs ${d[2]}% ${d[3]}`);
+  });
+  const lg = sv.append('g').attr('transform','translate(0,'+(h-6)+')');
+  lg.append('circle').attr('r',5).attr('cx',5).attr('cy',-4).attr('fill',css('--flare')); lg.append('text').attr('x',14).text('top critics (12 readable)');
+  lg.append('circle').attr('r',5).attr('cx',190).attr('cy',-4).attr('fill',css('--ice')); lg.append('text').attr('x',199).text('others (35 readable)');
+})();
+(() => {
+  const Q = [
+    ['r','There’s a difference between being high concept and being high on your own supply.','Dana Stevens, Slate · rotten'],
+    ['r','Here’s the real problem: “Digger” isn’t funny.','Owen Gleiberman, Variety · rotten'],
+    ['r','It feels like an Armando Iannucci rewrite away from being a masterpiece.','Scott Tobias, The Reveal · rotten'],
+    ['f','Don’t listen to anyone who tells you it isn’t funny.','Phil de Semlyen, Time Out · fresh'],
+    ['f','Risky art is often called a high-wire act, but Tom Cruise’s latest film really earns the label.','Robbie Collin, The Telegraph · fresh'],
+    ['f','Sue me, I had a good time.','Ty Burr, Watch List · fresh']];
+  const host = document.getElementById('split-quotes');
+  Q.forEach(([c,q,by],i)=>{ const f = document.createElement('figure'); f.className = c;
+    f.innerHTML = `<blockquote>“${q.replace(/^“|”$/g,'')}”</blockquote><figcaption>${by}</figcaption>`;
+    if (!reduce) { f.style.opacity = 0; f.style.transform = 'translateX(-10px)'; f.style.transition = 'opacity .5s, transform .5s'; setTimeout(()=>{f.style.opacity=1;f.style.transform='none';}, 300+i*160); }
+    host.appendChild(f); });
+})();
 
 /* ---------- box office ---------- */
 const BO = [['Oct 1','Thu',1.2,'prev'],['Oct 2','Fri',3.49],['Oct 3','Sat',2.67],['Oct 4','Sun',1.85],['Oct 5','Mon',.77],['Oct 6','Tue',1.15],['Oct 7','Wed',.73],['Oct 8','Thu',.59],['Oct 9','Fri',.975,'est'],['Oct 10','Sat',1.31,'est'],['Oct 11','Sun',.915,'est']];
